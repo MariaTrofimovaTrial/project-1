@@ -1,0 +1,324 @@
+html {
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+* *::before *::after {
+  box-sizing: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: slategrey;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.header-left,
+.header-right {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.header-left-image {
+  position: relative;
+  background-image: url("../images/home-img.jpg");
+  background-position: top left;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.header-left-title {
+  font-family: "Open Sans";
+  position: absolute;
+  top: 25px;
+  font-size: 25px;
+  padding-left: 100px;
+  padding-top: 25px;
+}
+
+.header-right {
+  box-sizing: border-box;
+  display: block;
+  padding-left: 40px;
+  background-color: #f5f5dc;
+  width: 50%;
+  height: 500px;
+}
+
+.header-right-navbar {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  align-items: center;
+}
+
+.header-right-navbar-item {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+.header-right-intro {
+  text-transform: uppercase;
+  color: darkgray;
+}
+
+.header-right-message {
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.header-right-descr {
+  color: darkgray;
+  padding-bottom: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.button {
+  border-radius: 30px;
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.skills,
+.sections,
+.experience,
+.education,
+.quote,
+.footer {
+  display: flex;
+  width: 100%;
+}
+
+.skills-block,
+.experience-img,
+.information,
+.education-img,
+.contact-page {
+  width: 50%;
+}
+
+.skills-img,
+.experience-image,
+.education-image,
+.quote-img,
+.background-image,
+.quote-content,
+.footer-image {
+  width: 100%;
+  height: 100%;
+}
+
+.skills-img,
+.section,
+.footer-img,
+.location {
+  width: 25%;
+}
+
+.skills {
+  padding: 0;
+  margin: 0;
+}
+
+.skills-img {
+  width: 25%;
+}
+
+.skills-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skills-descr {
+  width: 25%;
+  padding-left: 30px;
+  padding-right: 20px;
+  background-color: darkgoldenrod;
+}
+
+.skills-block {
+  width: 50%;
+  /* box-sizing:border-box; */
+  padding-right: 20px;
+  padding-left: 40px;
+}
+
+.skills-subtitle {
+  color: coral;
+  padding-bottom: 30px;
+}
+
+.skills-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2;
+}
+
+.skills-title {
+  font-family: "Open Sans";
+  color: blueviolet;
+  font-weight: normal;
+  padding-bottom: 15px;
+}
+
+.skills-list {
+  color: #f5f5dc;
+}
+
+.skills-item {
+  padding-bottom: 15px;
+  padding-top: 10px;
+  border-bottom: solid black;
+}
+
+.sections {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-yellow {
+  background-color: khaki;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-orange {
+  background-color: lightcoral;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-black {
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-white {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.experience-info {
+  background-color: chocolate;
+}
+
+.information {
+  box-sizing: border-box;
+  padding-left: 25px;
+}
+
+.information-item {
+  color: white;
+  padding-bottom: 15px;
+}
+
+.information-title {
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: normal;
+  padding-bottom: 20 px;
+}
+
+.information-subtitle {
+  color: whitesmoke;
+  padding-bottom: 50px;
+}
+
+.information-descr {
+  display: block;
+  padding-bottom: 15px;
+  color: whitesmoke;
+}
+
+.information-date {
+  display: inline;
+  color: black;
+}
+
+.education-info {
+  background-color: tomato;
+}
+
+.quote-img {
+  background-image: url(../images/quotes-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1.5;
+  filter: alpha(opacity=80) black;
+}
+
+.quote-content {
+  position: absolute;
+  padding-top: 350px;
+  color: white;
+  text-align: center;
+}
+
+.quote-descr {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.quote-main-content {
+  font-size: 40px;
+}
+
+.contact-page {
+  background-color: blueviolet;
+  color: whitesmoke;
+}
+
+.contact-title {
+  font-size: 30px;
+  font-weight: normal;
+  padding-top: 15px;
+}
+
+.contact-info-item {
+  border-bottom: solid white 1 rem;
+  padding-bottom: 15px;
+}
+
+.location {
+  background-color: black;
+}
+
+.location-items {
+  color: whitesmoke;
+}
