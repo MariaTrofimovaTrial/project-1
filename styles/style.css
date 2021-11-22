@@ -171,6 +171,7 @@ body {
 
 .skills-descr {
   width: 25%;
+  box-sizing:border-box;
   padding-left: 30px;
   padding-right: 20px;
   background-color: darkgoldenrod;
@@ -178,7 +179,7 @@ body {
 
 .skills-block {
   width: 50%;
-  /* box-sizing:border-box; */
+  box-sizing:border-box;
   padding-right: 20px;
   padding-left: 40px;
 }
