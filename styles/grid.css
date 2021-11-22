@@ -61,6 +61,17 @@ a {
   text-transform: uppercase;
 }
 
+.dashboard-item {
+  font-size: 15px;
+	color: #fafafa;
+	padding: 16px 26px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 3px;
+	box-shadow: 0px 6px #27ae60;
+	background: #2ecc71;
+}
+
 .header-right-intro {
   text-transform: uppercase;
   color: darkgray;
