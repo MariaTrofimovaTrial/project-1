@@ -1,14 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/dashboard.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <link rel="shortcut icon" href="./images/flower.png" type="image/png" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="tabs">
+        <input class="menu-tabs" id="tab1" type="radio" name="tabs" checked />
+        <label class="menu-label" for="tab1">Button</label>
+        <input class="menu-tabs" id="tab2" type="radio" name="tabs" checked />
+        <label class="menu-label" for="tab2">Checkbox</label>
+        <input class="menu-tabs" id="tab3" type="radio" name="tabs" />
+        <label class="menu-label" for="tab3">Radiobutton</label>
+        <input class="menu-tabs" id="tab4" type="radio" name="tabs" />
+        <label class="menu-label" for="tab4">Toggle</label>
+        <input class="menu-tabs" id="tab5" type="radio" name="tabs" />
+        <label class="menu-label" for="tab5">Drop-down menu</label>
+        <input class="menu-tabs" id="tab6" type="radio" name="tabs" />
+        <label class="menu-label" for="tab6">Download</label>
+        <input class="menu-tabs" id="tab7" type="radio" name="tabs" />
+        <label class="menu-label" for="tab7">Tooltip</label>
+        <input class="menu-tabs" id="tab8" type="radio" name="tabs" />
+        <label class="menu-label" for="tab8">Text Overflow</label>
+        <input class="menu-tabs" id="tab9" type="radio" name="tabs" />
+        <label class="menu-label" for="tab9">Form</label>
+        <section id="content1" class="buttons">
+          <button class="button1">Press Me</button>
+          <button class="button2">Try Me</button>
+          <button class="button3">Cool Btn</button>
+          <button class="button4">Super-button</button>
+          <button class="button5">Just Me</button>
+        </section>
+        <section id="content2" class="checkboxes">
+          <div class="checkbox1">
+            <p class="checkbox-question1">What kinds of music do you prefer?</p>
+            <input
+              class="input_checkbox1"
+              type="checkbox"
+              name="one"
+              id="one"
+            />
+            <label class="label_checkbox1" for="one">Hard Rock</label>
+            <input
+              class="input_checkbox1"
+              type="checkbox"
+              name="two"
+              id="two"
+            />
+            <label class="label_checkbox1" for="two">Indian Pop</label>
+            <input
+              class="input_checkbox1"
+              type="checkbox"
+              name="three"
+              id="three"
+            />
+            <label class="label_checkbox1" for="three">Heavy Metal</label>
+            <input
+              class="input_checkbox1"
+              type="checkbox"
+              name="four"
+              id="four"
+            />
+            <label class="label_checkbox1" for="four">Punk</label>
+          </div>
+
+          <div class="checkbox2">
+            <p class="checkbox-question2">How do you spend your free time?</p>
+            <input
+              class="input_checkbox2"
+              type="checkbox"
+              name="one1"
+              id="one1"
+            />
+            <label class="label_checkbox2" for="one1">Chill on the beach</label>
+            <input
+              class="input_checkbox2"
+              type="checkbox"
+              name="two1"
+              id="two1"
+            />
+            <label class="label_checkbox2" for="two1">Cook cakes</label>
+            <input
+              class="input_checkbox2"
+              type="checkbox"
+              name="three1"
+              id="three1"
+            />
+            <label class="label_checkbox2" for="three">Eat sushi</label>
+            <input
+              class="input_checkbox2"
+              type="checkbox"
+              name="four1"
+              id="four1"
+            />
+            <label class="label_checkbox2" for="four1">Barbecues</label>
+          </div>
+
+          <div class="checkbox3">
+            <p class="checkbox-question3">What are your favourite movies?</p>
+            <input
+              class="input_checkbox3"
+              type="checkbox"
+              name="one2"
+              id="one2"
+            />
+            <label class="label_checkbox3" for="one2">Harry Potter</label>
+            <input
+              class="input_checkbox3"
+              type="checkbox"
+              name="two2"
+              id="two2"
+            />
+            <label class="label_checkbox3" for="two2">Breaking Bad</label>
+            <input
+              class="input_checkbox3"
+              type="checkbox"
+              name="three2"
+              id="three2"
+            />
+            <label class="label_checkbox3" for="three2">Black Mirror</label>
+            <input
+              class="input_checkbox3"
+              type="checkbox"
+              name="four2"
+              id="four2"
+            />
+            <label class="label_checkbox3" for="four2">Game of Thrones</label>
+          </div>
+        </section>
+        <section id="content3">
+          <p class="radio-question">
+            How to contact you in case of urgent issues?
+          </p>
+          <div class="radios">
+            <input
+              class="radio-input"
+              type="radio"
+              name="choice"
+              id="label-one"
+            />
+            <label class="radio-label" for="label-one">Email</label>
+          </div>
+
+          <div class="radios">
+            <input
+              class="radio-input"
+              type="radio"
+              name="choice"
+              id="label-two"
+            />
+            <label class="radio-label" for="label-two">Phone</label>
+          </div>
+
+          <div class="radios">
+            <input
+              class="radio-input"
+              type="radio"
+              name="choice"
+              id="label-three"
+            />
+            <label class="radio-label" for="label-three">Telegram</label>
+          </div>
+        </section>
+
+        <section id="content4">
+          <div class="container-toggle">
+            <div>
+              <input type="checkbox" class="toggle" id="default" />
+              <label
+                for="default"
+                data-checked="checked"
+                data-unchecked="unchecked"
+              ></label>
+            </div>
+            <div>
+              <input type="checkbox" class="toggle" id="rounded" />
+              <label
+                for="rounded"
+                data-checked="checked"
+                class="rounded"
+                data-unchecked="unchecked"
+              ></label>
+            </div>
+          </div>
+        </section>
+
+        <section id="content5">
+          <p class="select-question1">Where would you like to live?</p>
+          <div class="select">
+            <select name="" id="">
+              <option value="1">Los Angeles</option>
+              <option value="2">Toronto</option>
+              <option value="3">Paris</option>
+              <option value="3">Minsk</option>
+            </select>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Lipstick</button>
+            <div class="dropdown-content">
+              <a href="#">Red</a>
+              <a href="#">Nude</a>
+              <a href="#">Purple</a>
+            </div>
+          </div>
+        </section>
+        <section id="content6">
+          <div class="download">
+            <input type="file" name="f" />
+          </div>
+        </section>
+        <section id="content7">
+          <div class="tooltip">
+            I will give you a nice tip :)
+            <span class="tooltiptext">Learn English</span>
+          </div>
+        </section>
+        <section id="content8">
+          <div class="elem">
+            Lorem ipsum dolor sit amet
+            оооооооооооооооооооооооооооооченьдлинноеслово, consectetur
+            ещеоднооченьдлинноооооооооооооооооооооооооеслово adipiscing elit.
+          </div>
+        </section>
+        <section id="content9">
+          <div class="form">
+            <ul>
+              <li class="form-element">
+                <input type="text" id="name" required /><label for="name"
+                  >Your name</label
+                >
+              </li>
+              <li class="form-element">
+                <input type="text" id="pass" required /><label for="pass"
+                  >Passport</label
+                >
+              </li>
+              <li class="form-element">
+                <input type="email" id="email" required /><label for="email"
+                  >Email</label
+                >
+              </li>
+              <li class="form-element">
+                <input type="text" id="phone" required /><label for="phone"
+                  >Phone number</label
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
