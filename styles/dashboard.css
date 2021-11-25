@@ -34,7 +34,6 @@ button {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  /* width: 100px; */
   height: 100%;
 }
 
@@ -580,13 +579,11 @@ input[type="checkbox"].toggle:checked + label:before {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
-
   position: absolute;
   z-index: 1;
   bottom: 125%;
   left: 50%;
   margin-left: -60px;
-
   opacity: 0;
   transition: opacity 0.3s;
 }
