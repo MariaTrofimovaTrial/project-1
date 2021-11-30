@@ -30,7 +30,16 @@
         <label class="menu-label" for="tab8">Text Overflow</label>
         <input class="menu-tabs" id="tab9" type="radio" name="tabs" />
         <label class="menu-label" for="tab9">Form</label>
-      </div>
+        <input class="menu-tabs" id="tab10" type="radio" name="tabs" />
+        <label class="menu-label" for="tab10">Table</label>
+        <input class="menu-tabs" id="tab11" type="radio" name="tabs" />
+        <label class="menu-label" for="tab11">Text</label>
+        <input class="menu-tabs" id="tab12" type="radio" name="tabs" />
+        <label class="menu-label" for="tab12">Slider1</label>
+        <input class="menu-tabs" id="tab13" type="radio" name="tabs" />
+        <label class="menu-label" for="tab13">Slider2</label>
+        <input class="menu-tabs" id="tab14" type="radio" name="tabs" />
+        <label class="menu-label" for="tab14">To-Do List</label>
         <section id="content1" class="buttons">
           <button class="button1">Press Me</button>
           <button class="button2">Try Me</button>
@@ -46,6 +55,7 @@
               type="checkbox"
               name="one"
               id="one"
+              checked="checked"
             />
             <label class="label_checkbox1" for="one">Hard Rock</label>
             <input
@@ -85,6 +95,7 @@
               type="checkbox"
               name="two1"
               id="two1"
+              checked="checked"
             />
             <label class="label_checkbox2" for="two1">Cook cakes</label>
             <input
@@ -124,6 +135,7 @@
               type="checkbox"
               name="three2"
               id="three2"
+              checked="checked"
             />
             <label class="label_checkbox3" for="three2">Black Mirror</label>
             <input
@@ -171,25 +183,18 @@
         </section>
 
         <section id="content4">
-          <div class="container-toggle">
-            <div>
-              <input type="checkbox" class="toggle" id="default" />
-              <label
-                for="default"
-                data-checked="checked"
-                data-unchecked="unchecked"
-              ></label>
-            </div>
-            <div>
-              <input type="checkbox" class="toggle" id="rounded" />
-              <label
-                for="rounded"
-                data-checked="checked"
-                class="rounded"
-                data-unchecked="unchecked"
-              ></label>
-            </div>
+          <div class="toggle-container">
+            <h1>Are you 18 years old?</h1>
+            <label class="toggle-switch">
+              <input class="toggle-default" type="checkbox" checked />
+              <span class="toggle-slider"></span>
+            </label>
+            <label class="toggle-switch">
+              <input class="toggle-default" type="checkbox" />
+              <span class="toggle-slider"></span>
+            </label>
           </div>
+          <button class="submit-button" type="submit">Submit</button>
         </section>
 
         <section id="content5">
@@ -213,7 +218,10 @@
         </section>
         <section id="content6">
           <div class="download">
-            <input type="file" name="f" />
+            <label class="download-label">
+              <span class="download-name">Choose File</span>
+              <input type="file" name="f" />
+            </label>
           </div>
         </section>
         <section id="content7">
@@ -230,29 +238,211 @@
           </div>
         </section>
         <section id="content9">
-          <div class="form">
-            <ul>
-              <li class="form-element">
-                <input type="text" id="name" required /><label for="name"
-                  >Your name</label
-                >
-              </li>
-              <li class="form-element">
-                <input type="text" id="pass" required /><label for="pass"
-                  >Passport</label
-                >
-              </li>
-              <li class="form-element">
-                <input type="email" id="email" required /><label for="email"
-                  >Email</label
-                >
-              </li>
-              <li class="form-element">
-                <input type="text" id="phone" required /><label for="phone"
-                  >Phone number</label
-                >
-              </li>
-            </ul>
+          <div class="form form-container" style="display: inline-block">
+            <h1 class="form-title">Your personal info</h1>
+            <div class="form-group">
+              <input class="form-input" type="text" />
+              <label class="form-label">Name</label>
+            </div>
+            <div class="form-group">
+              <input class="form-input" type="email" />
+              <label class="form-label">Email</label>
+            </div>
+            <button class="modal-window" data-easy-class="show">
+              <a href="#modal-window-popup">Submit</a>
+            </button>
+            <div id="modal-window-popup" class="modal">
+              <div class="modal-window">
+                <h1>Hello!!!</h1>
+                <button data-easy-toggle="#categories" class="btn-close">
+                  <a href="#close"> X </a>
+                </button>
+              </div>
+              <div
+                data-easy-toggle="#categories"
+                data-easy-class="show"
+                class="overlay"
+              ></div>
+            </div>
+          </div>
+        </section>
+        <section id="content10">
+          <div id="table-wrapper">
+            <div id="table-scroll">
+              <table class="custom-scrollbar">
+                <tbody>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section id="content11">
+          <p class="text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consequatur quo esse ipsa in exercitationem veniam voluptates
+            eligendi eum sunt maxime alias eos quidem, doloremque quia provident
+            totam vitae unde distinctio. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Qui ad excepturi animi reprehenderit in modi
+            obcaecati, fugit eum fugiat aspernatur.
+          </p>
+          <div class="text-text">
+            <h3 class="beautiful-text">
+              Natus, eligendi unde est sed ex iure ipsa esse. Voluptate. Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa,
+              at voluptates ipsam soluta iste atque ducimus molestias.
+              Laboriosam, corrupti aut numquam est blanditiis eos laudantium
+              odio veniam quis natus! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.
+            </h3>
+          </div>
+        </section>
+        <section id="content12">
+          <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked />
+            <input type="radio" name="slider" id="slide2" />
+            <input type="radio" name="slider" id="slide3" />
+            <input type="radio" name="slider" id="slide4" />
+            <div id="slides">
+              <div id="overflow">
+                <div class="inner">
+                  <div class="slide slide_1">
+                    <div class="slide-content">
+                      <img src="./images/pic1.jpg" />
+                    </div>
+                  </div>
+                  <div class="slide slide_2">
+                    <div class="slide-content">
+                      <img src="./images/pic2.jpg" />
+                    </div>
+                  </div>
+                  <div class="slide slide_3">
+                    <div class="slide-content">
+                      <img src="./images/pic3.jpg" />
+                    </div>
+                  </div>
+                  <div class="slide slide_4">
+                    <div class="slide-content">
+                      <img src="./images/pic4.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="controls">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+            </div>
+          </div>
+        </section>
+
+        <section id="content13">
+          <!-- Image Gallery -->
+          <div>
+            <div id="mygallery">
+              <ul id="fullimage">
+                <li id="pic1"><img src="./images/pic-1.jpg" /></li>
+                <li id="pic2"><img src="./images/pic-2.jpg" /></li>
+                <li id="pic3"><img src="./images/pic-3.jpg" /></li>
+                <li id="pic4"><img src="./images/pic-4.jpg" /></li>
+              </ul>
+              <ul id="thumbimage">
+                <li>
+                  <a href="#pic1"> <img src="./images/pic-1.jpg" /> </a>
+                </li>
+                <li>
+                  <a href="#pic2"> <img src="./images/pic-2.jpg" /> </a>
+                </li>
+                <li>
+                  <a href="#pic3"> <img src="./images/pic-3.jpg" /> </a>
+                </li>
+                <li>
+                  <a href="#pic4"> <img src="./images/pic-4.jpg" /> </a>
+                </li>
+              </ul>
+              <br style="clear: both" />
+            </div>
+          </div>
+        </section>
+
+        <section id="content14">
+          <div class="todo-container">
+            <h1 class="todo-title">To-Do list</h1>
+            <div class="todo-items">
+              <input class="todo-input" id="item1" type="checkbox" />
+              <label class="todo-label" for="item1">Learn HTML</label>
+              <input class="todo-input" id="item2" type="checkbox" />
+              <label class="todo-label" for="item2">Learn CSS</label>
+              <input class="todo-input" id="item3" type="checkbox" />
+              <label class="todo-label" for="item3">Learn JS</label>
+              <input class="todo-input" id="item4" type="checkbox" />
+              <label class="todo-label" for="item4">Learn React</label>
+              <input class="todo-input" id="item5" type="checkbox" />
+              <label class="todo-label" for="item5"
+                >Become Senior developer</label
+              >
+              <input class="todo-input" id="item6" type="checkbox" />
+              <label class="todo-label" for="item6">Discover new</label>
+              <h2 class="done">Done</h2>
+              <h2 class="undone">To Do</h2>
+            </div>
           </div>
         </section>
       </div>
