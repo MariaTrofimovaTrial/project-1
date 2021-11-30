@@ -960,16 +960,35 @@ input[type="file"] {
 .done {
   position: relative;
   order: 1;
-}
+  }
+
+  .done:after {
+    position: absolute;
+    right:10px;
+    content: '('counter(done)')';
+  }
 
 .undone {
   position: relative;
   order: 3;
 }
 
+.undone:after {
+  position: absolute;
+  right:10px;
+  content: '('counter(undone)')';
+}
+
 .todo-input {
   position: absolute;
   opacity: 0;
+}
+
+.todo-input:checked {
+  counter-increment: done;
+}
+.todo-input:not(:checked) {
+  counter-increment: undone;
 }
 
 .todo-input:checked + label {
