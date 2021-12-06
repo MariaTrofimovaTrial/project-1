@@ -1,0 +1,337 @@
+a:hover {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+
+@import url(./styles/normalize.css);
+@import url(./grid-general-settings.css);
+
+@import url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\wght.ttf);
+@import url(../fonts/Roboto/Roboto-Light.ttf);
+
+%buttons {
+  border-radius: 30px;
+  display: inline-block;
+  padding: 20px;
+  font-weight: bold;
+}
+
+%sections {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+$color-1: #f5f5dc;
+$color-2: #fafafa;
+$color-3: #27ae60;
+$color-4: #2ecc71;
+$color-5: darkgray;
+$color-6: coral;
+$color-7: blueviolet;
+$color-8: black;
+
+@mixin block($pt, $pb, $pl, $pr) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+  padding-left: $pl;
+  padding-right: $pr;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  .header-left-image {
+    position: relative;
+    background-image: url("../images/home-img.jpg");
+    background-position: top left;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    & p {
+      font-family: "Open Sans";
+      position: absolute;
+      top: 25px;
+      font-size: 25px;
+      @include block(25px, 0, 100px, 0);
+    }
+  }
+}
+
+.header-right {
+  background-color: $color-1;
+  @include block(0, 15px, 30px, 0);
+  & ul {
+    @include block(30px, 80px, 0, 0);
+    align-items: center;
+  }
+  & li {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    @include block(0, 0, 15px, 20px);
+    text-transform: uppercase;
+    & a {
+      font-size: 15px;
+      color: $color-2;
+      padding: 16px, 26px;
+      border-radius: 3px;
+      box-shadow: 0, 6px, $color-3;
+      background: $color-4;
+    }
+  }
+}
+.header-right-intro {
+  text-transform: uppercase;
+  color: $color-5;
+  & h2 {
+    font-weight: lighter;
+    font-size: 30px;
+  }
+  .header-right-descr {
+    color: $color-5;
+    @include block(0, 20px, 0, 0);
+  }
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.button {
+  @extend %buttons;
+  background-image: linear-gradient(
+    to right,
+    #9eefe1 0%,
+    #4830f0 51%,
+    #9eefe1 100%
+  );
+}
+
+.mansonry-button {
+  @extend %button;
+  font-size: large;
+  margin-left: 50px;
+  background-color: limegreen;
+  &:hover {
+    background-color: magenta;
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  .skills-block {
+    width: 100%;
+    box-sizing: border-box;
+    @include block(0, 0, 40px, 20px);
+    & h4 {
+      color: $color-6;
+      padding-bottom: 30px;
+    }
+    & p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+}
+
+.skills-image {
+  background-size: cover;
+  height: 100%;
+}
+
+.skills-descr {
+  @include block(0, 0, 30px, 20px);
+  background-color: $color-4;
+  height: 100%;
+  & h2 {
+    font-family: "Open Sans";
+    color: $color-7;
+    font-weight: normal;
+  }
+  & ul {
+    color: $color-3;
+    & li {
+      @include block(10px, 15px, 0, 0);
+      border-bottom: solid black;
+    }
+  }
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  .section-yellow {
+    @extend %sections;
+    background-color: khaki;
+    color: white;
+  }
+  .section-orange {
+    @extend %sections;
+    color: $color-2;
+    background-color: $color-4;
+  }
+  .section-black {
+    @extend %sections;
+    color: $color-2;
+    background-color: $color-8;
+  }
+  .section-white {
+    @extend %sections;
+  }
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  .experience-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.experience-info {
+  background-color: chocolate;
+}
+
+.information {
+  box-sizing: border-box;
+  @include block(0, 0, 25px, 0);
+  .information-title {
+    color: $color-1;
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 20 px;
+  }
+  .information-subtitle {
+    color: $color-2;
+    padding-bottom: 50px;
+  }
+  .information-item {
+    color: $color-2;
+    @include block(0, 15px, 0, 0);
+  }
+  .information-descr {
+    display: block;
+    padding-bottom: 15px;
+    color: $color-2;
+  }
+  .information-date {
+    display: inline;
+    color: black;
+  }
+}
+
+.education {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  .education-info {
+    background-color: tomato;
+  }
+  .education-img,
+  .education-image,
+  .background-image,
+  .quote-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.quote {
+  display: grid;
+  grid-template-columns: 100%;
+  .quote-img {
+    background-image: url(../images/quotes-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: alpha(opacity=80) black;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .quote-content {
+    position: absolute;
+    padding-top: 350px;
+    color: $color-2;
+    text-align: center;
+    .quote-descr {
+      font-size: 30px;
+      font-style: italic;
+    }
+    .quote-main-content {
+      font-size: 40px;
+    }
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  .footer-img {
+    width: 100%;
+  }
+  .footer-image {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.contact-page {
+  background-color: $color-7;
+  color: $color-1;
+  .contact-title {
+    font-size: 30px;
+    font-weight: normal;
+    padding-top: 15px;
+  }
+  .contact-info-item {
+    border-bottom: solid white 1 rem;
+    padding-bottom: 15px;
+  }
+  .location {
+    background-color: black;
+    .location-items {
+      color: whitesmoke;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .quote-content {
+    padding-top: 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .general-container {
+    max-width: none;
+  }
+  .header {
+    display: block;
+  }
+  .sections {
+    grid-template-columns: repeat(2, 50%);
+  }
+  .skills {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .quote-main-content {
+    font-size: 20px;
+  }
+
+  .quote-descr {
+    font-size: 15px;
+  }
+
+  .footer {
+    display: block;
+  }
+}
